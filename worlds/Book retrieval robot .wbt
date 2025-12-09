@@ -1,0 +1,93 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/Shelves.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/school_furniture/protos/Book.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/PlasticFruitBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.22823388798527483 -0.03410843831553464 0.9730086879420967 3.4304036756638174
+  position 3.128388073177702 -3.05721907896924 2.388587465839934
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2.5 10
+  floorAppearance Parquetry {
+  }
+}
+Youbot {
+  hidden position_0_0 89.79131324817152
+  hidden position_0_1 220.38546722795337
+  hidden position_0_2 237.64457951979904
+  hidden position_0_3 96.89495199154328
+  hidden position_1_0 -1.1881373725588852e-05
+  hidden rotation_2 0 0 -1 1.1881375258258324e-05
+  hidden position_2_0 -0.600004530096814
+  hidden rotation_3 0 1 0 0.6000045300968141
+  hidden position_3_0 -0.20000218879273085
+  hidden rotation_4 0 1 0 0.20000218879273132
+  hidden position_4_0 -0.5000006238380593
+  hidden rotation_5 0 1 0 0.5000006238380595
+  hidden position_5_0 8.886880148382259e-14
+  hidden position_6_0 3.284334956776824e-11
+  hidden position_6_1 -3.259263779004096e-11
+  hidden translation_7 0 3.284334956776824e-11 0.09
+  hidden translation_8 0 3.259263779004096e-11 0.09
+  hidden rotation_9 0 0.9999999999999999 0 1.826718947657309
+  hidden rotation_10 0 -0.9999999999999999 0 5.809203830511743
+  hidden rotation_11 0 -1 0 1.116462153025248
+  hidden rotation_12 0 -0.9999999999999999 0 3.636012923330103
+  translation -0.4378262083945584 0.004247347516199871 0.09887468493073265
+  rotation -0.003006891911532441 -4.002509263498514e-05 0.99999547848929 3.140912865745244
+  controller "library_rail_controller"
+}
+Shelves {
+  translation -1.1 0 -0.4
+}
+Shelves {
+  translation -1.1 -0.75 -0.4
+  name "shelves(1)"
+}
+DEF book Solid {
+  translation -1.1027424685483989 -0.13628251274417466 0.4208993808895003
+  rotation 0.5894327776473767 -0.5544837767252865 0.5874663751938154 2.1290089999039292
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.99678 0.984909
+        baseColorMap ImageTexture {
+          url [
+            "51EiHArqZxL._AC_UF894,1000_QL80_.jpg"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.012 0.15 0.15
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.012 0.15 0.15
+  }
+  physics Physics {
+    mass 0.1
+  }
+}
+Book {
+  translation -1.02806 -0.00546268 0.53196
+  rotation 0.6970109950735647 0.7167639949339515 0.020616699854282303 -3.067465307179586
+}
+PlasticFruitBox {
+  translation 0 -4.67 0
+  color 0.734737 0.735027 0.665309
+}
