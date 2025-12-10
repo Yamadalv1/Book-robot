@@ -286,8 +286,8 @@ while robot.step(timestep) != -1:
         print("Done :)")
         
         #Prints Occupancy Map (for testing)
-        for y in range(environmentHeight):
-            for x in range(environmentLength):
-                print(grid1[y][x], end="")
-            print()
+        #for y in range(environmentHeight):
+            #for x in range(environmentLength):
+                #print(grid1[y][x], end="")
+            #print()
     
