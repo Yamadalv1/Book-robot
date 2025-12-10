@@ -4,6 +4,22 @@ from controller import Robot
 robot = Robot()
 timestep = int(robot.getBasicTimeStep())
 
+#Imports for occupancy Mapping
+from controller import Lidar
+import math
+from controller import GPS
+
+#Environment Values Needed for Occupancy Mapping
+#Height and Length of RectangleArena divided by 0.01
+environmentHeight = 10000
+environmentLength = 250
+#Sets initial coordinates of robot
+robotCoordinates = (-0.437826,0.004242735,0.0988747)
+#Robots bearing from North
+RobotsAngleFromNorth = (3*math.pi)/2
+#bearing of first lidar scan from robots normal
+LidarAngleFromRobot = (7*math.pi)/4
+
 # 1. Setup Wheels
 wheels = []
 wheel_names = ['wheel1', 'wheel2', 'wheel3', 'wheel4']

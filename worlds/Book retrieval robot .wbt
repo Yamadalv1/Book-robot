@@ -12,8 +12,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.22823388798527483 -0.03410843831553464 0.9730086879420967 3.4304036756638174
-  position 3.128388073177702 -3.05721907896924 2.388587465839934
+  orientation -0.248254247403188 0.07741390868324063 0.9655966628922552 2.556663425388259
+  position 1.2416941880823034 -1.1336458505303868 1.3298832009290387
 }
 TexturedBackground {
   texture "empty_office"
@@ -30,26 +30,38 @@ Youbot {
   hidden position_0_1 220.38546722795337
   hidden position_0_2 237.64457951979904
   hidden position_0_3 96.89495199154328
-  hidden position_1_0 -1.1881373725588852e-05
-  hidden rotation_2 0 0 -1 1.1881375258258324e-05
-  hidden position_2_0 -0.600004530096814
-  hidden rotation_3 0 1 0 0.6000045300968141
-  hidden position_3_0 -0.20000218879273085
-  hidden rotation_4 0 1 0 0.20000218879273132
-  hidden position_4_0 -0.5000006238380593
-  hidden rotation_5 0 1 0 0.5000006238380595
-  hidden position_5_0 8.886880148382259e-14
-  hidden position_6_0 3.284334956776824e-11
-  hidden position_6_1 -3.259263779004096e-11
-  hidden translation_7 0 3.284334956776824e-11 0.09
-  hidden translation_8 0 3.259263779004096e-11 0.09
-  hidden rotation_9 0 0.9999999999999999 0 1.826718947657309
-  hidden rotation_10 0 -0.9999999999999999 0 5.809203830511743
-  hidden rotation_11 0 -1 0 1.116462153025248
-  hidden rotation_12 0 -0.9999999999999999 0 3.636012923330103
+  hidden position_3_0 -1.1881373725588852e-05
+  hidden rotation_4 0 0 -1 1.1881375258258324e-05
+  hidden position_4_0 -0.600004530096814
+  hidden rotation_5 0 1 0 0.6000045300968141
+  hidden position_5_0 -0.20000218879273085
+  hidden rotation_6 0 1 0 0.2000021887927313
+  hidden position_6_0 -0.5000006238380593
+  hidden rotation_7 0 1 0 0.5000006238380595
+  hidden position_7_0 8.886880148382259e-14
+  hidden position_8_0 3.284334956776824e-11
+  hidden position_8_1 -3.259263779004096e-11
+  hidden translation_9 0 3.284334956776824e-11 0.09
+  hidden translation_10 0 3.259263779004096e-11 0.09
+  hidden rotation_11 0 0.9999999999999999 0 1.826718947657309
+  hidden rotation_12 0 -0.9999999999999999 0 5.809203830511743
+  hidden rotation_13 0 -1 0 1.116462153025248
+  hidden rotation_14 0 -0.9999999999999999 0 3.6360129233301035
   translation -0.4378262083945584 0.004247347516199871 0.09887468493073265
   rotation -0.003006891911532441 -4.002509263498514e-05 0.99999547848929 3.140912865745244
   controller "library_rail_controller"
+  bodySlot [
+    Lidar {
+      translation 0.28 0 0.13
+      name "lidar2"
+      numberOfLayers 1
+    }
+    Lidar {
+      translation 0.28 0 0.46
+      name "lidar1"
+      numberOfLayers 1
+    }
+  ]
 }
 Shelves {
   translation -1.1 0 -0.4
