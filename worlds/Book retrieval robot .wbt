@@ -12,8 +12,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.2484470682283743 0.06669845467342758 0.9663464029181784 2.633941999578711
-  position 1.3364184735296032 -1.249530350900855 1.3581962188126862
+  orientation 0.2415907608254973 -0.03406015490602297 -0.969780289617981 3.413340757646627
+  position 1.6932135293971298 -0.47276093973248035 1.4615099109963485
 }
 TexturedBackground {
   texture "empty_office"
@@ -26,32 +26,20 @@ RectangleArena {
   }
 }
 Youbot {
-  hidden position_0_0 89.79131304711917
-  hidden position_0_1 220.38546702896411
-  hidden position_0_2 237.64457970130744
-  hidden position_0_3 96.89495217511461
-  hidden position_4_0 -2.5676412225338712e-05
-  hidden rotation_5 0 0 -0.9999999999999999 2.567640873569518e-05
-  hidden position_5_0 -0.6000114238921077
-  hidden rotation_6 0 1 0 0.6000114238921079
-  hidden position_6_0 -0.20000627027084367
-  hidden rotation_7 0 1 0 0.20000627027084406
-  hidden position_7_0 -0.5023191968288144
-  hidden rotation_8 0 1 0 0.5023191968288141
-  hidden position_8_0 1.881070136981143e-06
-  hidden rotation_9 0 0 1 1.881090860135565e-06
-  hidden position_9_0 0.00010665649496646651
-  hidden position_9_1 0.010894541628076033
-  hidden translation_10 0 0.00010665649496646651 0.09
-  hidden translation_11 0 -0.010894541628076033 0.09
-  hidden rotation_12 0 1 0 1.8267187466049641
-  hidden rotation_13 0 -1 0 5.809204029500998
-  hidden rotation_14 0 -1 0 1.1164619715168507
-  hidden rotation_15 0 -1 0 3.636012739758773
-  translation -0.43796559198295615 0.0042505872210240455 0.09876663733170378
-  rotation -0.0036710549289476688 -2.481287174597036e-05 0.9999932613473105 3.1409128557584105
+  translation -0.532784 -0.00428712 0.0989419
+  rotation 0.0015068797941912516 -4.970409321144444e-05 -0.9999988634207485 -3.110865307179586
   controller "library_rail_controller"
   bodySlot [
+    InertialUnit {
+    }
+    DistanceSensor {
+      translation 0.21 0.16 0
+      name "left_wheel_sensor"
+    }
+    DistanceSensor {
+      translation 0.21 -0.16 0
+      name "right_wheel_sensor"
+    }
     GPS {
       translation 0.28 0 0
     }
@@ -68,42 +56,15 @@ Youbot {
   ]
 }
 Shelves {
-  translation -1.1 0 -0.4
+  translation -1.1 0 -0.42
 }
 Shelves {
-  translation -1.1 -0.75 -0.4
+  translation -1.1 -0.75 -0.42
   name "shelves(1)"
 }
-DEF book Solid {
-  translation -1.102753171020933 -0.13627259715692544 0.4209607200030548
-  rotation 0.5884476436933356 -0.5544900855331596 0.5884472072133494 2.1290247472792747
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 1 0.99678 0.984909
-        baseColorMap ImageTexture {
-          url [
-            "51EiHArqZxL._AC_UF894,1000_QL80_.jpg"
-          ]
-        }
-      }
-      geometry Box {
-        size 0.012 0.15 0.15
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.012 0.15 0.15
-  }
-  physics Physics {
-    mass 0.1
-  }
-  linearVelocity -1.8258574612676968e-08 1.752324464479267e-08 3.125524704473184e-07
-  angularVelocity -2.9205350686652563e-06 -3.043089823756014e-06 -2.0015271640518606e-17
-}
 Book {
-  translation -1.0450088553686416 0.009904607847833166 0.5344484274376939
-  rotation 0.7071419664887806 0.7065834933157239 -0.02626796916642539 -3.0795666564923185
+  translation -1.12878 0.0452144 0.504856
+  rotation -0.695643841217572 0.7183868360264271 -2.8310493538059794e-08 3.14159
 }
 PlasticFruitBox {
   translation 0 -4.67 0
